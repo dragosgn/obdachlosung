@@ -17,8 +17,8 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    const map = new mapboxgl.Map({
+  initMap() {
+    this.map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/bnedelcu/ck6xo07ez135s1jqihjjq2viy',
       center: [this.state.lng, this.state.lat],
@@ -26,7 +26,44 @@ class App extends React.Component {
     });
   }
 
+  initSocket() {
+    console.log('Initializing Socket connection')
+    var socket = window.io("https://shielded-cliffs-05755.herokuapp.com/");
+    socket.on("message", data => {
+      console.log('message from socket', data);
+      this.handleSocketMessage(data);
+    });
+  }
+
+  handleSocketMessage({body}) {
+    this.setState({
+      lat: body.lat || this.state.lat,
+      lng: body.long || this.state.lng,
+      zoom: 16,
+      message: this.state.message + '\n' + body.message 
+    });
+  }
+
+  componentDidMount() {
+    this.initMap();
+    this.initSocket();
+  }
+
+  componentDidUpdate() {
+      const marker = new mapboxgl.Marker()
+      .setLngLat([this.state.lng, this.state.lat])
+      .addTo(this.map);
+
+      this.map.easeTo({
+        center: [this.state.lng, this.state.lat],
+        zoom: 12
+      })
+    
+    
+  }
+
   render() {
+    console.log(this.state.lat, this.state.lng)
     return (
       <div className="App">
         <SideBar />
