@@ -13,7 +13,8 @@ class App extends React.Component {
     this.state = {
       lng: 13.405,
       lat: 52.52,
-      zoom: 10
+      zoom: 10,
+      counter: 799999
     };
   }
 
@@ -89,6 +90,9 @@ class App extends React.Component {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="counter">
+          Counter: {this.state.counter}
         </div>
       </div>
     );

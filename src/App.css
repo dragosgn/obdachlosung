@@ -122,3 +122,18 @@ li {
 .alignmeup {
   vertical-align: super;
 }
+
+.counter {
+  position: fixed;
+  left: 50%;
+  bottom: 70px;
+  width: 360px;
+  color: #373a47;
+  transform: translate(-50%, 0);
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #373a47;
+  padding: 20px;
+  font-size: 30px;
+  background-image: linear-gradient(#A9A9A9, #E8E8E8);
+}
