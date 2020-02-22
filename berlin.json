@@ -10,7 +10,7 @@
     {
       "type": "Feature",
       "properties": {
-        "obdach": 70,
+        "obdach": 360,
         "gml_id": "re_bezirke.01",
         "spatial_name": "01",
         "spatial_alias": "Mitte",
@@ -705,7 +705,7 @@
         "spatial_name": "02",
         "spatial_alias": "Friedrichshain-Kreuzberg",
         "spatial_type": "Polygon",
-        "obdach": 100
+        "obdach": 1170
       },
       "geometry": {
         "type": "Polygon",
@@ -1319,7 +1319,7 @@
       "properties": {
         "gml_id": "re_bezirke.03",
         "spatial_name": "03",
-        "obdach": 60,
+        "obdach": 2700,
         "spatial_alias": "Pankow",
         "spatial_type": "Polygon"
       },
@@ -2836,7 +2836,7 @@
       "properties": {
         "gml_id": "re_bezirke.04",
         "spatial_name": "04",
-        "obdach": 30,
+        "obdach": 450,
         "spatial_alias": "Charlottenburg-Wilmersdorf",
         "spatial_type": "Polygon"
       },
@@ -3654,7 +3654,7 @@
       "properties": {
         "gml_id": "re_bezirke.05",
         "spatial_name": "05",
-        "obdach": 20,
+        "obdach": 187,
         "spatial_alias": "Spandau",
         "spatial_type": "Polygon"
       },
@@ -4449,7 +4449,7 @@
       "properties": {
         "gml_id": "re_bezirke.06",
         "spatial_name": "06",
-        "obdach": 10,
+        "obdach": 633,
         "spatial_alias": "Steglitz-Zehlendorf",
         "spatial_type": "Polygon"
       },
@@ -5278,7 +5278,7 @@
       "properties": {
         "gml_id": "re_bezirke.07",
         "spatial_name": "07",
-        "obdach": 10,
+        "obdach": 98,
         "spatial_alias": "Tempelhof-Schöneberg",
         "spatial_type": "Polygon"
       },
@@ -5980,7 +5980,7 @@
       "properties": {
         "gml_id": "re_bezirke.08",
         "spatial_name": "08",
-        "obdach": 80,
+        "obdach": 905,
         "spatial_alias": "Neukölln",
         "spatial_type": "Polygon"
       },
@@ -8285,7 +8285,7 @@
       "properties": {
         "gml_id": "re_bezirke.10",
         "spatial_name": "10",
-        "obdach": 40,
+        "obdach": 1710,
         "spatial_alias": "Marzahn-Hellersdorf",
         "spatial_type": "Polygon"
       },
@@ -8990,7 +8990,7 @@
       "properties": {
         "gml_id": "re_bezirke.11",
         "spatial_name": "11",
-        "obdach": 60,
+        "obdach": 112,
         "spatial_alias": "Lichtenberg",
         "spatial_type": "Polygon"
       },
@@ -9746,7 +9746,7 @@
       "properties": {
         "gml_id": "re_bezirke.12",
         "spatial_name": "12",
-        "obdach": 10,
+        "obdach": 720,
         "spatial_alias": "Reinickendorf",
         "spatial_type": "Polygon"
       },
