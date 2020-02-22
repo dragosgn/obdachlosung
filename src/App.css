@@ -126,14 +126,18 @@ li {
 .counter {
   position: fixed;
   left: 50%;
-  bottom: 70px;
+  bottom: 39px;
   font-family: "Roboto", sans-serif;
   color: #6c5ce7;
   transform: translate(-50%, 0);
-  height: 40px;
-  border-radius: 10px;
-  /* border: 2px solid #373a47; */
+  height: 75px;
+  border-radius: 0px;
+  border: 0px;
   padding: 20px;
-  font-size: 80px;
+  font-size: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
   font-weight: 900;
+  padding-bottom: 30px;
+  background: #dfe6e9;
 }
