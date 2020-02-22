@@ -79,6 +79,15 @@ class App extends React.Component {
                 Powered By:
               </li>
               <li>
+                <a href="https://www.heroku.com/" target="_blank"><div><img src="https://zulipchat.com/static/images/integrations/logos/heroku.svg" alt="Heroku"/></div></a>
+              </li>
+              <li>
+                <a href="https://www.whatsapp.com/" target="_blank"><div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/588px-WhatsApp_logo-color-vertical.svg.png" alt="WhatsApp"/></div></a>
+              </li>
+              <li>
+                <a href="https://socket.io/" target="_blank"><div><img src="https://cdn.worldvectorlogo.com/logos/socket-io.svg" alt="Socket.IO"/></div></a>
+              </li>
+              <li>
                 <a href="https://www.twilio.com/" target="_blank"><div><img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38586/preview.svg" alt="Twilio"/></div></a>
               </li>
               <li>
