@@ -42,7 +42,7 @@ class App extends React.Component {
       lat: body.lat || this.state.lat,
       lng: body.long || this.state.lng,
       zoom: 16,
-      message: this.state.message + "\n" + body.message,
+      message: body.message,
       counter: this.state.counter + 1
     });
   }
@@ -61,6 +61,25 @@ class App extends React.Component {
       center: [this.state.lng, this.state.lat],
       zoom: 12
     });
+
+    if (this.state.message) {
+      var markerHeight = 50, markerRadius = 10, linearOffset = 25;
+      var popupOffsets = {
+      'top': [0, 0],
+      'top-left': [0,0],
+      'top-right': [0,0],
+      'bottom': [0, -markerHeight],
+      'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+      'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+      'left': [markerRadius, (markerHeight - markerRadius) * -1],
+      'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+      };
+      var popup = new mapboxgl.Popup({offset: popupOffsets, className: 'my-class'})
+        .setLngLat([this.state.lng, this.state.lat])
+        .setHTML('<h1 style="color: #6c5ce7;">' + this.state.message + "</h1>")
+        .setMaxWidth("300px")
+        .addTo(this.map);
+    }
   }
 
   render() {
