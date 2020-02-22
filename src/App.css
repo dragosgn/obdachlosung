@@ -99,8 +99,8 @@ body {
 }
 
 .poweredby {
-   float: right;
-   padding-right: 20px;
+  float: right;
+  padding-right: 20px;
 }
 
 img {
@@ -108,7 +108,7 @@ img {
 }
 
 ul li {
-  display:inline-block;
+  display: inline-block;
 }
 
 ul {
@@ -127,13 +127,13 @@ li {
   position: fixed;
   left: 50%;
   bottom: 70px;
-  width: 360px;
-  color: #373a47;
+  font-family: "Roboto", sans-serif;
+  color: #6c5ce7;
   transform: translate(-50%, 0);
   height: 40px;
   border-radius: 10px;
-  border: 2px solid #373a47;
+  /* border: 2px solid #373a47; */
   padding: 20px;
-  font-size: 30px;
-  background-image: linear-gradient(#A9A9A9, #E8E8E8);
+  font-size: 46px;
+  font-weight: 900;
 }
