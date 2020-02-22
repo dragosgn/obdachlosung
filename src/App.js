@@ -3,6 +3,7 @@ import mapboxgl from "mapbox-gl";
 
 import "./App.css";
 import SideBar from "./Sidebar";
+import numeral from "numeral";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYm5lZGVsY3UiLCJhIjoiY2lrc2tqOTlxMDAwMncza2s5YnlvcHdmdiJ9.b29Ye0RJ3QfVaJCCfb7xVw";
@@ -15,7 +16,7 @@ class App extends React.Component {
       lng: 13.405,
       lat: 52.52,
       zoom: 10,
-      counter: 17000
+      counter: 17321
     };
   }
   initMap() {
@@ -112,7 +113,9 @@ class App extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="counter">{this.state.counter}</div>
+        <div className="counter">
+          {numeral(this.state.counter).format("0,0")}
+        </div>
       </div>
     );
   }
