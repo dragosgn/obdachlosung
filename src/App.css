@@ -50,6 +50,7 @@ body {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  height: calc(100% - 40px) !important;
 }
 
 .bm-morph-shape {
@@ -74,4 +75,50 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+  height: calc(100% - 40px);
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.description {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #373a47;
+  color: white;
+  height: 40px;
+}
+
+.poweredby {
+   float: right;
+   padding-right: 20px;
+}
+
+img {
+  height: 25px;
+}
+
+ul li {
+  display:inline-block;
+}
+
+ul {
+  margin-top: 7px;
+}
+
+li {
+  margin: 0 5px;
+}
+
+.alignmeup {
+  vertical-align: super;
 }

@@ -35,6 +35,24 @@ class App extends React.Component {
             <div ref={el => this.mapContainer = el} className="mapContainer" />
           </div>
         </div>
+        <div className="footer">
+          <div className="poweredby">
+            <ul>
+              <li className="alignmeup">
+                Powered By:
+              </li>
+              <li>
+                <a href="https://www.twilio.com/" target="_blank"><div><img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38586/preview.svg" alt="Twilio"/></div></a>
+              </li>
+              <li>
+                <a href="https://lisk.io/" target="_blank"><div><img src="http://crypto.marketswiki.com/images/e/e1/Lisk_logo.png" alt="Lisk"/></div></a>
+              </li>
+              <li>
+                <a href="https://www.mapbox.com/" target="_blank"><div><img src="https://seeklogo.com/images/M/mapbox-logo-D6FDDD219C-seeklogo.com.png" alt="MapBox"/></div></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
