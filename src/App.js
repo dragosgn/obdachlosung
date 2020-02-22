@@ -14,7 +14,7 @@ class App extends React.Component {
       lng: 13.405,
       lat: 52.52,
       zoom: 10,
-      counter: 799999
+      counter: 17000
     };
   }
 
@@ -41,7 +41,8 @@ class App extends React.Component {
       lat: body.lat || this.state.lat,
       lng: body.long || this.state.lng,
       zoom: 16,
-      message: this.state.message + '\n' + body.message 
+      message: this.state.message + '\n' + body.message,
+      counter: this.state.counter + 1
     });
   }
 
@@ -59,8 +60,6 @@ class App extends React.Component {
         center: [this.state.lng, this.state.lat],
         zoom: 12
       })
-    
-    
   }
 
   render() {

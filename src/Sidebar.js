@@ -6,7 +6,7 @@ import { slide as Menu } from 'react-burger-menu';
 export default props => {
   return (
     <Menu right>
-      <a className="menu-item title" href="/">
+      <a className="menu-item title" href="javascript:void(0)">
         Obdachlösung
       </a>
 
